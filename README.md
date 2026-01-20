@@ -1,13 +1,9 @@
-Kostka project
+Kostka
 ===========================
 
 Účel/Zadání/Funkce
 -----------------------
-
-* parní mlátička s elektronickým vstřikováním
-    * pára
-    * píst
-    * mikroprocesor
+Při stistku tlačítka se na LED ukáže náhodné číslo 1 - 6. Jako u hrací kostky
 
 
 Schéma zapojení
@@ -18,8 +14,14 @@ Schéma zapojení
 Popis funkce
 -----------------------
 
-1. ono se to
-2. samo se to
+* Rozložení svítící/zhasnutých LED bude v poli cube
+* Náhodné číslo se vygeneruje z času, po který uživatel drží tlačítko:
+    - pokud uživatel drží tlačítko stále se inkrementuje proměnná 'num'
+    - pokud uživatel tlačítko pustí provedeme num % 6, tím získá 0-5 respektive 1 - 5
+* zobrazím cube[num]
+* v projektu je:
+    1. jednoduchá varianta: pokud jsou všechny LED na jednom portu
+    2. složitější, ale reálná varianta, kdy je každá LED na jiném portu
 
 ToDo
 -----------------------
